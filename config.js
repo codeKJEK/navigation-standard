@@ -9,6 +9,7 @@ const init = () => {
       title: "logo",
       href: "#", // link to home page or top of page
       text: "KuKo Design",
+      //   text: `<img src="path" alt="logo alt" /> KuKo Design`,
     },
   ];
 
