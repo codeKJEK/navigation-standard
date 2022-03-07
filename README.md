@@ -12,7 +12,7 @@
 
 **Note:** The style sheet includes variables which must be copied in order for all the default styles to be applied. The body style is not required.
 
-3. Copy the JavaScript from config.js. Everything is contained within the "init" function which is performed when the page loads. If you already have a window load function you may place the contents of the init function inside of your current init function.
+3. Copy the JavaScript from config.js. Everything is contained within the "init" function which is performed when the page loads. If you already have a window load function you may place the contents of the "init" function inside of your current load function.
 
 4. Edit the bannerLinks skip to contain a link to the main content of your website.
 
