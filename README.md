@@ -18,8 +18,8 @@
 
 5. Edit the bannerLinks variable to include your desired logo.
 
-**Note** An extra text variable has been added incase your logo is or contains an image. To use it simply comment out the original and uncomment the one containing the image and edit as needed.
+**Note:** An extra text variable has been added incase your logo is or contains an image. To use it simply comment out the original and uncomment the one containing the image and edit as needed.
 
 6. Edit navigationLinks to contain the correct text, links and images.
 
-**Note** The current version uses SVG in order to have full control over the icons. If you use another image format you may need to write some additional CSS.
+**Note:** The current version uses SVG in order to have full control over the icons. If you use another image format you may need to write some additional CSS.
