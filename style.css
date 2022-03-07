@@ -1,0 +1,140 @@
+:root {
+  --banner-background: rgb(242, 242, 242);
+  --banner-color: rgb(13, 13, 13);
+  --banner-icon: 24px;
+  --banner-height: 56px;
+  --banner-icon-fontSize: 0.75em;
+  --banner-icon-color: rgb(64, 64, 64);
+  --banner-logo-fontSize: 1.125em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--banner-background);
+  color: var(--banner-color);
+  z-index: 1;
+}
+
+.banner a:focus {
+  text-decoration: underline;
+}
+
+.banner__skip,
+.banner__logo {
+  font-size: var(--banner-logo-fontSize);
+  height: var(--banner-height);
+  text-decoration: none;
+  color: var(--banner-color);
+}
+
+.banner__skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--banner-background);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner__skip:focus {
+  transform: translateY(0);
+}
+
+.banner__logo {
+  font-weight: bold;
+}
+
+.banner__nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--banner-background);
+}
+
+.banner__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.banner__menuitem {
+  height: var(--banner-height);
+  width: var(--banner-height);
+  font-size: var(--banner-icon-fontSize);
+  color: var(--banner-icon-color);
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.banner__menuitem svg {
+  height: var(--banner-icon);
+  width: var(--banner-icon);
+  fill: var(--banner-icon-color);
+}
+
+@media screen and (min-width: 426px) {
+  .banner__list {
+    width: 426px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .banner__logo {
+    padding: 0 16px;
+  }
+
+  .banner__nav {
+    position: static;
+    width: unset;
+  }
+
+  .banner__list {
+    width: unset;
+    margin: 0;
+  }
+
+  .banner__menuitem {
+    font-size: 1em;
+    width: unset;
+    padding: 0 16px;
+  }
+
+  .banner__menuitem svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .banner__container {
+    width: 1025px;
+    margin: 0 auto;
+  }
+}
