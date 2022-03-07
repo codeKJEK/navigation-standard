@@ -18,7 +18,7 @@
 
 5. Edit the bannerLinks variable to include your desired logo.
 
-**Note:** An extra text variable has been added incase your logo is or contains an image. To use it simply comment out the original and uncomment the one containing the image and edit as needed.
+**Note:** An extra text key/value pair has been added incase your logo is or contains an image. To use it simply comment out the original and uncomment the one containing the image and edit as needed.
 
 6. Edit navigationLinks to contain the correct text, links and images.
 
